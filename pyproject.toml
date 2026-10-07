@@ -1,0 +1,20 @@
+[project]
+name = "gemini-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Hashim", email = "hashimkhatri987@email.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.23.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+gemini-agent = "gemini_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
